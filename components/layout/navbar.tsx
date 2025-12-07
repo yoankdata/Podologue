@@ -32,7 +32,7 @@ export function Navbar() {
                         <img
                             src="/images/logo.png"
                             alt="Logo Cabinet Vanessa Lagarrigue"
-                            className="h-12 w-auto object-contain"
+                            className="h-20 w-auto object-contain"
                         />
                     </Link>
                 </div>
