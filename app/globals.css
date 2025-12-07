@@ -1,0 +1,120 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* --- PALETTE ÉTENDUE --- */
+  /* Primary: Bleu Profond (Confiance, Médical) */
+  --color-primary: #1F3B66;
+  --color-primary-rgb: 31, 59, 102;
+  /* Pour les opacités */
+  --color-primary-light: #E8EDF5;
+  /* Fonds subtils */
+  --color-primary-hover: #152A4A;
+  /* État Hover */
+
+  /* Secondary: Vert Sarcelle (Santé, Calme) */
+  --color-secondary: #3FA395;
+  --color-secondary-hover: #328277;
+
+  /* Neutres & Surfaces */
+  --color-background: #FFFFFF;
+  --color-surface: #F8FAFC;
+  /* Gris très léger pour casser le blanc pur */
+  --color-surface-hover: #F1F5F9;
+
+  /* Texte */
+  --color-text-main: #111827;
+  /* Presque noir, plus doux */
+  --color-text-muted: #64748B;
+  /* Gris moyen lisible (Slate-500) */
+  --color-text-inverted: #FFFFFF;
+
+  /* UI Elements */
+  --color-border: #E2E8F0;
+  /* Gris clair pour séparateurs */
+  --color-input: #E2E8F0;
+  --color-ring: #1F3B66;
+  /* Focus ring */
+
+  /* --- TYPOGRAPHIE --- */
+  --font-serif: var(--font-serif), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* --- SYSTEME --- */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  /* Standard moderne */
+  --radius-xl: 1rem;
+}
+
+/* --- BASE STYLES & RESET --- */
+@layer base {
+  :root {
+    /* Variables CSS natives pour usage hors Tailwind si besoin */
+    --navbar-height: 4rem;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text-main);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    /* Lisibilité accrue pour le corps de texte */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    /* Prévient le scroll horizontal accidentel */
+  }
+
+  /* Amélioration des titres */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.2;
+    /* Titres plus compacts */
+    letter-spacing: -0.02em;
+    /* Touche moderne "tight" */
+    text-wrap: balance;
+    /* Évite les orphelins (mots seuls à la ligne) */
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    /* Fallback */
+    margin-bottom: 1.5rem;
+  }
+
+  /* Focus accessible et esthétique */
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+    border-radius: 0.125rem;
+  }
+
+  /* Sélection de texte aux couleurs de la marque */
+  ::selection {
+    background-color: var(--color-secondary);
+    color: white;
+  }
+}
+
+/* --- UTILITAIRES PERSONNALISÉS (Optionnel) --- */
+@layer utilities {
+
+  /* Classe pour centrer le contenu avec padding sécurisé */
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Effet de verre dépoli moderne */
+  .glass-effect {
+    @apply bg-white/80 backdrop-blur-md border border-white/20;
+  }
+}
