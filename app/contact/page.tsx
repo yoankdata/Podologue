@@ -11,7 +11,7 @@ export default function ContactPage() {
     return (
         <div className="bg-white">
             {/* HEADER */}
-            <div className="bg-[var(--color-surface)] py-16 sm:py-24">
+            <div className="bg-[var(--color-surface)] pt-40 pb-16 sm:pt-48 sm:pb-24">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
                     <h1 className="text-3xl font-bold tracking-tight text-[var(--color-primary)] sm:text-5xl font-serif">
                         Contactez le Cabinet

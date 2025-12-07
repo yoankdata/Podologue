@@ -30,7 +30,7 @@ export default function CabinetPage() {
     return (
         <div className="bg-white">
             {/* HEADER / TITLE */}
-            <div className="relative isolate overflow-hidden bg-[var(--color-surface)] py-24 sm:py-32">
+            <div className="relative isolate overflow-hidden bg-[var(--color-surface)] pt-32 pb-24 sm:pt-40 sm:pb-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:mx-0">
                         <h1 className="text-4xl font-bold tracking-tight text-[var(--color-primary)] sm:text-6xl font-serif">

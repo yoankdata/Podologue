@@ -118,7 +118,7 @@ export function Footer() {
                 {/* BOTTOM BAR */}
                 <div className="mt-16 border-t border-[var(--color-border)] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-xs text-[var(--color-text-muted)]">
-                        &copy; {new Date().getFullYear()} Cabinet Vanessa LAGARRIGUE. Tous droits réservés.
+                        &copy; {new Date().getFullYear()} <a href="https://www.bloneagency.fr" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-primary)] transition-colors">Blone</a>. Tous droits réservés.
                     </p>
                     <div className="flex space-x-6">
                         {navigation.legal.map((item) => (
