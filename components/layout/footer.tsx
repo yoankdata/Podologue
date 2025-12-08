@@ -103,7 +103,7 @@ export function Footer() {
                                     En cas d'urgence médicale grave, composez le 15. Pour une urgence podologique, laissez un message.
                                 </p>
                                 <Link
-                                    href="https://www.doctolib.fr"
+                                    href="https://www.doctolib.fr/pedicure-podologue/toulouse/vanessa-lagarrigue"
                                     target="_blank"
                                     className="block w-full text-center bg-[var(--color-primary)] text-white text-sm font-medium py-2 rounded-[var(--radius-sm)] hover:bg-[var(--color-primary-hover)] transition-colors"
                                 >
