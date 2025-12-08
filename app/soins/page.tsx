@@ -42,7 +42,7 @@ const expertises = [
 export default function SoinsPage() {
     return (
         <div className="bg-white">
-            <div className="bg-[var(--color-surface)] py-24 sm:py-32">
+            <div className="bg-[var(--color-surface)] py-32 sm:py-48">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
                     <h1 className="text-3xl font-bold tracking-tight text-[var(--color-primary)] sm:text-5xl font-serif">
                         Soins & Expertises
